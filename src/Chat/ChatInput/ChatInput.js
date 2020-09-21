@@ -17,13 +17,15 @@ class ChatInput extends Component {
 
   handleSubmit = () => {
     this.props.onSend(this.state.mes);
-    console.log(this.state.mes);
+    this.setState({
+      mes: '',
+    });
   };
 
   render() {
     return (
       <footer className="ChatInput">
-        <input type="text" onChange={this.handleChange} />
+        <input type="text" onChange={this.handleChange} value={this.state.mes} />
         <button type="button" onClick={this.handleSubmit}>
           Send
         </button>
