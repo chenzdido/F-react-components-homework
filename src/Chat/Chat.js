@@ -42,11 +42,6 @@ class Chat extends Component {
         }
         return false;
       });
-      // for (let tag of answer.tags){
-      //   if(message.includes(tag)){
-      //    answerList.push(answer);
-      //      }
-      // }
     });
     this.setState((state) => ({
       messages: state.messages.concat(mes, answerList),

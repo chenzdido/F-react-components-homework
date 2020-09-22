@@ -12,6 +12,7 @@
   ],
   "parser": "babel-eslint",
   "rules": {
+    "no-restricted-syntax": 0,
     "react/jsx-filename-extension": [
       1,
       {
